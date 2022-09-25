@@ -10,13 +10,6 @@ export let customTheme = extendTheme({
         bgSize: 'cover',
         bgAttachment: 'fixed',
         fontFamily: "'Chakra Petch', sans-serif"
-      },
-      hr: {
-        borderStyle: 'dashed',
-        borderRightStyle: 'dashed',
-        borderLeftStyle: 'dashed',
-        borderTopStyle: 'dashed',
-        borderBottomStyle: 'dashed'
       }
     }
   },
