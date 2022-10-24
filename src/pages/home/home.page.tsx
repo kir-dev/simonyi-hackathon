@@ -118,7 +118,7 @@ const HomePage = () => {
         <OrganizerSection
           organizers={impressumConfig?.otherOrganizers || []}
           message={impressumConfig?.otherOrganizersMessage}
-          title="Stáb további tagjai"
+          title="Mentorok"
         />
       </Box>
     </CmschPage>
