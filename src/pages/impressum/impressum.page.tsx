@@ -26,16 +26,6 @@ const ImpressumPage = () => {
         ))}
       </Wrap>
       <Markdown text={impressumConfig?.developersBottomMessage} />
-      <OrganizerSection
-        organizers={impressumConfig?.leadOrganizers || []}
-        message={impressumConfig?.leadOrganizersMessage}
-        title="Rendezők"
-      />
-      <OrganizerSection
-        organizers={impressumConfig?.otherOrganizers || []}
-        message={impressumConfig?.otherOrganizersMessage}
-        title="Mentorok"
-      />
     </CmschPage>
   )
 }
