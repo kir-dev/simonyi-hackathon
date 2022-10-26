@@ -1,5 +1,6 @@
 import { Avatar, HStack, Text, useColorModeValue, VStack, WrapItem } from '@chakra-ui/react'
 import { Organizer } from '../../../api/contexts/config/types'
+import Markdown from '../../../common-components/Markdown'
 
 type Props = {
   organizer: Organizer
@@ -14,8 +15,8 @@ export const OrganizerWrapItem = ({ organizer: { name, avatar, roles } }: Props)
           <Text fontSize="lg" fontWeight={700}>
             {name}
           </Text>
-          <Text fontSize="sm" fontStyle="italic">
-            {roles}
+          <Text fontSize="sm" wordBreak="break-all">
+            <Markdown text={roles} />
           </Text>
         </VStack>
       </HStack>
