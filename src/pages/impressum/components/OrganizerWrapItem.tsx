@@ -15,7 +15,7 @@ export const OrganizerWrapItem = ({ organizer: { name, avatar, roles } }: Props)
           <Text fontSize="lg" fontWeight={700}>
             {name}
           </Text>
-          <Text fontSize="sm" wordBreak="break-all">
+          <Text fontSize="xs" wordBreak="break-word">
             <Markdown text={roles} />
           </Text>
         </VStack>
