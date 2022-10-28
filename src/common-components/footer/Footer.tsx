@@ -16,10 +16,19 @@ export const Footer = () => {
     <CmschContainer mb={5}>
       {component?.sponsorsEnabled && sponsors.length > 0 && (
         <>
-          <Text textAlign="center">Támogatóink</Text>
-          <Flex justifyContent={'center'} alignItems="center" flexWrap="wrap">
+          <Text textAlign="center" fontSize="xl">
+            Támogatóink
+          </Text>
+          <Flex
+            justifyContent={'center'}
+            alignItems="center"
+            flexWrap="wrap"
+            my={5}
+            backgroundColor="rgba(255,255,255,0.1)"
+            borderRadius="base"
+          >
             {sponsors.map((sp) => (
-              <Link href={sp.url} m={5} key={sp.image}>
+              <Link href={sp.url} m={2} key={sp.image}>
                 <Image src={sp.image} alt={sp.alt} maxHeight={40} maxWidth={40} />
               </Link>
             ))}
