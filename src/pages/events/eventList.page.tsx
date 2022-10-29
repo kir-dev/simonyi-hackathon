@@ -7,7 +7,20 @@ import { Loading } from '../../common-components/Loading'
 import EventList from './components/EventList'
 import { AbsolutePaths } from '../../util/paths'
 import { useConfigContext } from '../../api/contexts/config/ConfigContext'
-import { Box, Heading, Stack, TabList, TabPanel, TabPanels, Tabs, useBreakpoint, useBreakpointValue, useDisclosure } from '@chakra-ui/react'
+import {
+  Box,
+  Heading,
+  Stack,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+  Image,
+  useBreakpoint,
+  useBreakpointValue,
+  useDisclosure,
+  Link
+} from '@chakra-ui/react'
 import Markdown from '../../common-components/Markdown'
 import _ from 'lodash'
 import { FILTER, mapper } from './util/filter'
@@ -51,6 +64,11 @@ const EventListPage = () => {
       <Box mb={10}>
         <Heading mb={5}>{config?.components.event.title}</Heading>
         {config?.components.event.topMessage && <Markdown text={config?.components.event.topMessage} />}
+      </Box>
+      <Box>
+        <a href="/img/menetrend.png" target="_blank">
+          <Image src="/img/menetrend.png" alt="Menetrend" width="full" />
+        </a>
       </Box>
       <Tabs size={tabsSize} isFitted={breakpoint !== 'base'} variant="unstyled">
         {availableFilters.length > 0 && (
