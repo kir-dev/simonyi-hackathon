@@ -1,5 +1,5 @@
 import { Center, Flex, HStack, Image, Link, Text, useColorModeValue } from '@chakra-ui/react'
-import { FaFacebook, FaHeart, FaInstagram } from 'react-icons/fa'
+import { FaFacebook, FaHeart, FaInstagram, FaPaintBrush } from 'react-icons/fa'
 import { CmschContainer } from '../layout/CmschContainer'
 import { BUGREPORT_URL } from '../../util/configs/environment.config'
 import { customTheme } from '../../util/configs/theme.config'
@@ -88,6 +88,24 @@ export const Footer = () => {
               href={BUGREPORT_URL}
             >
               Kapcsolat
+            </Link>
+          </Flex>
+        </Flex>
+        <Flex align="center" flexDirection="column" justifyContent="center" mb={10} mx={10}>
+          <Flex align="center">
+            <Text mr={2}>Graphic design</Text>
+            <FaPaintBrush color="#C6D300" size="1.5rem" />
+            <Text ml={2}>by</Text>
+          </Flex>
+          <Image src="/img/schdesign.svg" maxW={40} maxH={40} my={3} />
+          <Flex align="center">
+            <Link
+              isExternal
+              fontSize="xl"
+              _hover={{ color: customTheme.colors.brand, textDecorationLine: 'underline' }}
+              href="https://schdesign.hu"
+            >
+              Weboldal
             </Link>
           </Flex>
         </Flex>
