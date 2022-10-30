@@ -92,11 +92,7 @@ export const Footer = () => {
           </Flex>
         </Flex>
         <Flex align="center" flexDirection="column" justifyContent="center" mb={10} mx={10}>
-          <Flex align="center">
-            <Text mr={2}>Graphic design</Text>
-            <FaPaintBrush color="#C6D300" size="1.5rem" />
-            <Text ml={2}>by</Text>
-          </Flex>
+          <Flex align="center">Graphic design by</Flex>
           <Image src="/img/schdesign.svg" maxW={40} maxH={40} my={3} />
           <Flex align="center">
             <Link
